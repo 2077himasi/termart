@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "termart"
+version = "0.1.0"
+description = "终端 ASCII 艺术生成器：图片转彩色 ASCII / 文字彩虹 / 矩阵雨"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["cli", "ascii", "art", "terminal", "matrix", "rainbow"]
+dependencies = ["pillow>=9.0.0"]
+
+[project.scripts]
+termart = "termart:main"
+
+[tool.setuptools]
+py-modules = ["termart"]
